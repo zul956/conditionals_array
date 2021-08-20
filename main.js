@@ -28,10 +28,43 @@ let channels = document.querySelectorAll(".channel");
 
 for (let index = 0; index < channels.length; index++) {
   channels[index].addEventListener("click", function (e) {
-    console.log(e.target.id);
+    // console.log(e.target.id);
     //#way 1
-    console.log(imageObjects[e.target.id]);
-    document.querySelector("#tv_display_picture").src =
-      imageObjects[e.target.id];
+    // console.log(imageObjects[e.target.id]);
+    // document.querySelector("#tv_display_picture").src =
+    //   imageObjects[e.target.id];
+
+    //way 2
+    // document.querySelector("#tv_display_picture").src = imagesArray[index];
+
+    //way 3
+    if (e.target.innerText == 1) {
+      document.querySelector("#tv_display_picture").src =
+        imagesArray[e.target.innerText - 1];
+    } else if (e.target.innerText == 2) {
+      document.querySelector("#tv_display_picture").src =
+        imagesArray[e.target.innerText - 1];
+    } else if (e.target.innerText == 3) {
+      document.querySelector("#tv_display_picture").src =
+        imagesArray[e.target.innerText - 1];
+    } else if (e.target.innerText == 4) {
+      document.querySelector("#tv_display_picture").src =
+        imagesArray[e.target.innerText - 1];
+    } else if (e.target.innerText == 5) {
+      document.querySelector("#tv_display_picture").src =
+        imagesArray[e.target.innerText - 1];
+    } else if (e.target.innerText == 6) {
+      document.querySelector("#tv_display_picture").src =
+        imagesArray[e.target.innerText - 1];
+    } else if (e.target.innerText == 7) {
+      document.querySelector("#tv_display_picture").src =
+        imagesArray[e.target.innerText - 1];
+    } else if (e.target.innerText == 8) {
+      document.querySelector("#tv_display_picture").src =
+        imagesArray[e.target.innerText - 1];
+    } else if (e.target.innerText == 9) {
+      document.querySelector("#tv_display_picture").src =
+        imagesArray[e.target.innerText - 1];
+    }
   });
 }
