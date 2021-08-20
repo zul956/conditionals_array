@@ -162,9 +162,12 @@ console.log("splice remove", arrayOfNames);
 arrayOfNames.splice(2, 0, "Nasrul", "James");
 console.log("splice add", arrayOfNames);
 
-console.log(5 % 2);
+// console.log(5 % 2) % - modulus
 for (let x = 1; x < 10; x++) {
-  console.log(x);
+  // x % 2 == 0
+  if (!(x % 2)) {
+    console.log(x);
+  }
 }
 
 // for (let x = arrayOfNames.length; x >= 0; x--) {
