@@ -24,5 +24,14 @@ let imageObjects = {
     "https://ga-instruction.s3.amazonaws.com/assets/front-end-web-development/fewd-conditionals-images/star-wars-solo.jpeg",
   nine: "https://ga-instruction.s3.amazonaws.com/assets/front-end-web-development/fewd-conditionals-images/stranger-things.jpg",
 };
+let channels = document.querySelectorAll(".channel");
 
-// for (let index = 0; index < channels.length; index++) {}
+for (let index = 0; index < channels.length; index++) {
+  channels[index].addEventListener("click", function (e) {
+    console.log(e.target.id);
+    //#way 1
+    console.log(imageObjects[e.target.id]);
+    document.querySelector("#tv_display_picture").src =
+      imageObjects[e.target.id];
+  });
+}
